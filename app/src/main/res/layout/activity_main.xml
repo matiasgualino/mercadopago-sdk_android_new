@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.mercadopago.views.MPButton
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mpsdk_button_height"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:text="Pagar $100 (Checkout)"
+        android:onClick="submitCheckout"
+        style="@style/mpsdk_button_normal"/>
+
+    <com.mercadopago.views.MPButton
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mpsdk_button_height"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:text="Pagar $100 (Payment Vault)"
+        android:onClick="submitPaymentVault"
+        style="@style/mpsdk_button_normal"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mp_results"
+        android:paddingTop="50dp"/>
+</LinearLayout>
