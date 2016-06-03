@@ -19,13 +19,17 @@ import com.mercadopago.model.Issuer;
 import com.mercadopago.model.PayerCost;
 import com.mercadopago.model.Payment;
 import com.mercadopago.model.PaymentMethod;
+
 import com.mercadopago.model.PaymentPreference;
+
 import com.mercadopago.model.Token;
 import com.mercadopago.util.CurrenciesUtil;
 
 import java.math.BigDecimal;
+
 import java.util.ArrayList;
 import java.util.List;
+
 
 public class MainActivity extends AppCompatActivity {
 
